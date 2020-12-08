@@ -4,13 +4,13 @@ class least_class:
         self.least =[]
         self.leastcache ={}
 
-
+# this function gets least recently used
     def get(self,key):
         if key in self.least:
             return self.leastcache[key]
         else:
             return None
-
+#
     def put(self,key):
         value ="www."+str(key)+".com"
 
